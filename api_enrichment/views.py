@@ -1,9 +1,3 @@
-
-
-
-#from django.shortcuts import render
-
-# Create your views here.
 from rest_framework import viewsets, status
 from rest_framework.response import Response
 from rest_framework.decorators import action
@@ -11,7 +5,6 @@ from .models import Category, Merchant, Keyword, Transaction
 from .serializers import CategorySerializer, MerchantSerializer, KeywordSerializer, TransactionSerializer
 from drf_spectacular.utils import extend_schema, extend_schema_view
 from django.shortcuts import render
-
 
 
 @extend_schema_view(
